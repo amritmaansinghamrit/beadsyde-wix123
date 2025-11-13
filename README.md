@@ -1,45 +1,156 @@
-# Git Integration & Wix CLI <img align="left" src="https://user-images.githubusercontent.com/89579857/185785022-cab37bf5-26be-4f11-85f0-1fac63c07d3b.png">
+# Beadsyde 2.0 on Wix - Ready to Deploy! 🚀
 
-This repo is part of Git Integration & Wix CLI, a set of tools that allows you to write, test, and publish code for your Wix site locally on your computer. 
+## ⚡ EASIEST WAY TO GET IT ON WIX (5 Minutes)
 
-Connect your site to GitHub, develop in your favorite IDE, test your code in real time, and publish your site from the command line.
+### Step 1: Open Your File
+Open `STANDALONE-EMBED.html` in any text editor
 
-## Set up this repository in your IDE
-This repo is connected to a Wix site. That site tracks this repo's default branch. Any code committed and pushed to that branch from your local IDE appears on the site.
+### Step 2: Go to Wix Editor
+1. Log into your Wix site
+2. Go to the page where you want your store
 
-Before getting started, make sure you have the following things installed:
-* [Git](https://git-scm.com/download)
-* [Node](https://nodejs.org/en/download/), version 14.8 or later.
-* [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [yarn](https://yarnpkg.com/getting-started/install)
-* An SSH key [added to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+### Step 3: Add Custom HTML
+1. Click **Add Elements** (+)
+2. Go to **Embed Code** → **Custom Element** → **HTML**
+3. Copy ALL code from `STANDALONE-EMBED.html`
+4. Paste into Wix
+5. Resize to full width, height 1500px+
 
-To set up your local environment and start coding locally, do the following:
+### Step 4: Upload Images
+1. Go to **Wix Media Manager**
+2. Upload images from `images/` folder
+3. Copy each image URL
+4. Edit your HTML code in Wix and paste URLs in the `PRODUCT_CONFIG` section
 
-1. Open your terminal and navigate to where you want to store the repo.
-1. Clone the repo by running `git clone <your-repository-url>`.
-1. Navigate to the repo's directory by running `cd <directory-name>`.
-1. Install the repo's dependencies by running `npm install` or `yarn install`.
-1. Install the Wix CLI by running `npm install -g @wix/cli` or `yarn global add @wix/cli`.  
-   Once you've installed the CLI globally, you can use it with any Wix site's repo.
+### Step 5: Publish!
+Click **Publish** - Done! 🎉
 
-For more information, see [Setting up Git Integration & Wix CLI](https://support.wix.com/en/article/velo-setting-up-git-integration-wix-cli-beta).
+---
 
-## Write Velo code in your IDE
-Once your repo is set up, you can write code in it as you would in any other non-Wix project. The repo's file structure matches the [public](https://support.wix.com/en/article/velo-working-with-the-velo-sidebar#public), [backend](https://support.wix.com/en/article/velo-working-with-the-velo-sidebar#backend), and [page code](https://support.wix.com/en/article/velo-working-with-the-velo-sidebar#page-code) sections in Editor X.
+## 📁 What's in This Repository
 
-Learn more about [this repo's file structure](https://support.wix.com/en/article/velo-understanding-your-sites-github-repository-beta).
+| File/Folder | Description | When to Use |
+|-------------|-------------|-------------|
+| **STANDALONE-EMBED.html** | Complete store in one file | ⭐ START HERE - Easiest method |
+| **EASY-WIX-SETUP.md** | Step-by-step setup guide | Read if you need help |
+| **images/** | All product images | Upload these to Wix Media |
+| **src/pages/** | Wix Velo code files | Advanced: Full Wix integration |
+| **src/public/beadsyde-config.js** | Product configuration | Advanced: Velo customization |
+| **BEADSYDE-SETUP-GUIDE.md** | Advanced Wix Velo setup | For developers |
+| **CHANGES-SUMMARY.md** | What was implemented | Reference |
 
-## Test your code with the Local Editor
-The Local Editor allows you test changes made to your site in real time. The code in your local IDE is synced with the Local Editor, so you can test your changes before committing them to your repo. You can also change the site design in the Local Editor and sync it with your IDE.
+---
 
-Start the Local Editor by navigating to this repo's directory in your terminal and running `wix dev`.
+## 🎯 Two Options Available
 
-For more information, see [Working with the Local Editor](https://support.wix.com/en/article/velo-working-with-the-local-editor-beta).
+### Option 1: Standalone Embed (Recommended)
+**Time**: 5 minutes
+**Difficulty**: Easy
+**File**: `STANDALONE-EMBED.html`
+**Guide**: `EASY-WIX-SETUP.md`
 
-## Preview and publish with the Wix CLI
-The Wix CLI is a tool that allows you to work with your site locally from your computer's terminal. You can use it to build a preview version of your site and publish it. You can also use the CLI to install [approved npm packages](https://support.wix.com/en/article/velo-working-with-npm-packages) to your site.
+✅ No manual element creation
+✅ Copy & paste ready
+✅ Works immediately
+✅ Easy to update
 
-Learn more about [working with the Wix CLI](https://support.wix.com/en/article/velo-working-with-the-wix-cli-beta).
+### Option 2: Full Wix Velo Integration
+**Time**: 30-60 minutes
+**Difficulty**: Moderate
+**Files**: `src/pages/*.js`
+**Guide**: `BEADSYDE-SETUP-GUIDE.md`
 
-## Invite contributors to work with you
-Git Integration & Wix CLI extends Editor X's [concurrent editing](https://support.wix.com/en/article/editor-x-about-concurrent-editing) capabilities. Invite other developers as collaborators on your [site](https://support.wix.com/en/article/inviting-people-to-contribute-to-your-site) and your [GitHub repo](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository). Multiple developers can work on a site's code at once.
+✅ Uses Wix visual editor
+✅ Deep Wix integration
+✅ Can use Wix Payments
+✅ More customization options
+
+---
+
+## ✨ What's Included
+
+### Features
+- ✅ All 4 Beadsyde products (Silver & Golden Infinity Necklaces + Bracelets)
+- ✅ Category filtering (All, Necklaces, Bracelets)
+- ✅ Add to cart functionality
+- ✅ Quantity controls (1-5 items)
+- ✅ Cart persistence (survives page refresh)
+- ✅ Mobile responsive
+- ✅ Beadsyde 2.0 design & colors
+
+### Design
+- 🎨 Primary Blue: #2E5BBA
+- 🎨 Neutral Beige: #F5F1E8
+- 🎨 Success Green: #10B981
+- 🎨 Clean, modern interface
+- 🎨 Infinity branding
+
+### Products
+1. **Silver Infinity Necklace** - ₹499
+2. **Golden Infinity Necklace** - ₹499
+3. **Silver Infinity Bracelet** - ₹349
+4. **Golden Infinity Bracelet** - ₹349
+
+---
+
+## 📸 Don't Forget!
+
+After embedding, you need to:
+1. Upload your images to Wix Media Manager
+2. Update the image URLs in your code
+3. Images are in the `images/` folder
+
+---
+
+## 🔗 Quick Links
+
+- **GitHub Repository**: https://github.com/amritmaansinghamrit/beadsyde-wix123
+- **Original beadsyde 2.0**: `/Users/amritsingh/beadsyde-2.0`
+- **Images Ready**: `/Users/amritsingh/beadsyde-wix123/images/`
+
+---
+
+## 🆘 Need Help?
+
+1. **Easiest setup**: Read `EASY-WIX-SETUP.md`
+2. **Advanced setup**: Read `BEADSYDE-SETUP-GUIDE.md`
+3. **What was done**: Read `CHANGES-SUMMARY.md`
+
+---
+
+## ✅ Quick Start Commands
+
+If you want to use Wix Velo (Option 2):
+
+```bash
+# Navigate to repository
+cd /Users/amritsingh/beadsyde-wix123
+
+# Install dependencies
+npm install
+
+# Install Wix CLI (if not installed)
+npm install -g @wix/cli
+
+# Start Local Editor
+wix dev
+
+# Publish when ready
+wix publish
+```
+
+---
+
+## 🎉 You're All Set!
+
+Everything is ready to go. Choose your method:
+- **Fast & Easy**: Use `STANDALONE-EMBED.html` (recommended)
+- **Full Integration**: Use Wix Velo with the `src/` files
+
+Either way, your Beadsyde 2.0 store will be live on Wix in no time!
+
+---
+
+**Created**: November 13, 2025
+**All your original beadsyde 2.0 work preserved!**
+**Ready to deploy!** 🚀
